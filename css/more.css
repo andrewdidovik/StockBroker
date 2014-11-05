@@ -1,0 +1,29 @@
+/*.horizontal-list li{
+	display:inline;
+	list-style-type: none;
+	margin-left: 10px;
+}*/
+.panel-heading{
+	text-align: right;
+	padding-top: 30px;
+}
+.center{
+	text-align: center;
+}
+.wrapper{
+	min-height: 50%;
+    height: auto;
+}
+
+.currency_change{
+	font-weight: bold;
+	padding: 10px 5px;
+	float:right; 
+}
+.currency_change.active{
+	color:#30BB41;
+}
+.currency_change:hover{
+	cursor:pointer;
+	
+};

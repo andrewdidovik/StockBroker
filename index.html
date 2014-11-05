@@ -1,0 +1,112 @@
+<html lang="rus"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Биржевой игрок</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/more.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <header class="masthead">
+      <div class="container">
+              <ul class="nav nav-pills navbar-left">
+                <li class="active"><a href="#">Валюта</a></li>
+                <li><a href="#">Нефть</a></li>
+                <li><a href="#">Драгметаллы</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="currency_change" id="USD"><span>10000</span> USD</li>
+                <li class="currency_change" id="EUR"><span>20000</span> EUR</li>
+                <li class="currency_change active" id="BIT"><span>150000</span> BIT</li>
+              </ul>
+        
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="jumbotron" id="display">
+            <div class="row" id="container">
+              График
+            </div>
+        </div>
+       
+            <p class="center">
+              <button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#sellModal">Продать</button>
+              <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#sellModal">Купить</button>
+              <!--button type="button" class="btn btn-lg btn-info">Info</button>
+              <button type="button" class="btn btn-lg btn-default">Default</button>
+              <button type="button" class="btn btn-lg btn-warning">Warning</button>
+              <button type="button" class="btn btn-lg btn-danger">Danger</button>
+              <button type="button" class="btn btn-lg btn-link">Link</button-->
+            </p>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="sellModalLabel">Продажа</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      <button type="button" class="btn btn-lg btn-default active" data-type="EUR">EUR</button>
+                      <button type="button" class="btn btn-lg btn-default" data-type="USD">USD</button>
+                    </p>
+                    <div class="input-group">
+                      <span class="input-group-addon symbol">&euro;</span>
+                      
+                      <input type="text" class="form-control" id="currency_sum">
+                      <span class="input-group-addon">.00</span>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Нет</button>
+                    <button type="button" class="btn btn-primary" id="doIt">Да</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+      </div>
+
+    </div>
+
+    <footer class="masthead">
+      <div class="container">
+        <h4>@ Биржевой игрок</h4>
+      </div>
+      
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+  
+
+</body></html>
